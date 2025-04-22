@@ -1,9 +1,12 @@
 import React from 'react'
+import Hero from './Hero/Hero'
+import Latestproducts from './Latestproducts/Latestproducts'
 
 const Index = () => {
   return (
     <div>
-      home
+      <Hero />
+      <Latestproducts />
     </div>
   )
 }

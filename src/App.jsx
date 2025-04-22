@@ -13,7 +13,7 @@ function App() {
         <NavBarLink />
 
         <Routes>
-          <Route to='/' element={<Index />} />
+          <Route path='/' element={<Index />} />
         </Routes>
 
       </BrowserRouter>
