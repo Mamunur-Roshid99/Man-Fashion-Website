@@ -1,5 +1,7 @@
 import React from 'react'
 
+import '../../../App.css'
+
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Pagination } from "swiper/modules";
 import "swiper/css";
@@ -44,7 +46,7 @@ const Hero = () => {
             autoplay={{ delay: 3000, disableOnInteraction: false }}
             pagination={{ clickable: true }}
             loop={true}
-            className="mySwiper"
+            className="custom-swiper"
           >
             <h1 className="absolute text-[100px] md:text-[85px] rotate-90 font-extrabold text-[#fbe5da] left-16 top-16 md:left-6 lg:top-28 lg:left-0 lg:text-[150px] font-sans">
               SHOE
@@ -78,43 +80,47 @@ const Hero = () => {
         </div>
 
         {/* content img */}
-        <div className="flex flex-col gap-4">
+        <div className="flex flex-col gap-4 items-center justify-between">
           {/* img1 */}
-          <div className="lg:w-[387px] lg:h-[225px] md:w-full flex items-center bg-gradient-to-r from-[#fff1f0] to-white">
-            <div className="lg:w-[179px] lg:h-[225px] w-[225px] md:w-full flex flex-col gap-4 items-center justify-center">
-              <div className="flex flex-col gap-1">
-                <h3 className="text-2xl text-[#0D0D0D]">new jeans</h3>
-                <p className="text-xl font-bold text-[#3B3B3B]">collection</p>
+          <div className="bg-white p-1 shadow-sm">
+            <div className="lg:w-[387px] lg:h-[225px] md:w-full flex items-center bg-gradient-to-r from-[#fff1f0] to-white">
+              <div className="lg:w-[179px] lg:h-[225px] w-[225px] md:w-full flex flex-col gap-4 items-center justify-center">
+                <div className="flex flex-col gap-1">
+                  <h3 className="text-2xl text-[#0D0D0D]">new jeans</h3>
+                  <p className="text-xl font-bold text-[#3B3B3B]">collection</p>
+                </div>
+                <p className="px-[15px] py-[3px] rounded-sm border text-sm text-[#0D0D0D] border-[#F3A279] cursor-pointer">
+                  view category
+                </p>
               </div>
-              <p className="px-[15px] py-[3px] rounded-sm border text-sm text-[#0D0D0D] border-[#F3A279] cursor-pointer">
-                view category
-              </p>
-            </div>
-            <div className="lg:w-[225px] lg:h-[225px] w-[179px]">
-              <img
-                src={heroImg2}
-                alt="hero"
-                className="lg:w-[225px] lg:h-[225px]"
-              />
+              <div className="lg:w-[225px] lg:h-[225px] w-[179px]">
+                <img
+                  src={heroImg2}
+                  alt="hero"
+                  className="lg:w-[225px] lg:h-[225px]"
+                />
+              </div>
             </div>
           </div>
           {/* img2 */}
-          <div className="lg:w-[387px] lg:h-[225px] md:w-full flex items-center bg-gradient-to-r from-[#fff1f0] to-white">
-            <div className="lg:w-[173px] lg:h-[224px] w-[225px] md:w-full flex flex-col gap-4 items-center justify-center">
-              <div className="flex flex-col gap-1">
-                <h3 className="text-2xl text-[#0D0D0D]">new glasses</h3>
-                <p className="text-xl font-bold text-[#3B3B3B]">collection</p>
+          <div className="bg-white p-1 shadow-sm">
+            <div className="lg:w-[387px] lg:h-[225px] md:w-full flex items-center bg-gradient-to-r from-[#fff1f0] to-white">
+              <div className="lg:w-[173px] lg:h-[224px] w-[225px] md:w-full flex flex-col gap-4 items-center justify-center">
+                <div className="flex flex-col gap-1">
+                  <h3 className="text-2xl text-[#0D0D0D]">new glasses</h3>
+                  <p className="text-xl font-bold text-[#3B3B3B]">collection</p>
+                </div>
+                <p className="px-[15px] py-[3px] rounded-sm border text-sm text-[#0D0D0D] border-[#F3A279] cursor-pointer">
+                  view category
+                </p>
               </div>
-              <p className="px-[15px] py-[3px] rounded-sm border text-sm text-[#0D0D0D] border-[#F3A279] cursor-pointer">
-                view category
-              </p>
-            </div>
-            <div className="lg:w-[225px] lg:h-[226px] w-[179px]">
-              <img
-                src={heroImg3}
-                alt="hero"
-                className="lg:w-[225px] lg:h-[225px] h-[150px]"
-              />
+              <div className="lg:w-[225px] lg:h-[226px] w-[179px]">
+                <img
+                  src={heroImg3}
+                  alt="hero"
+                  className="lg:w-[225px] lg:h-[225px] h-[150px]"
+                />
+              </div>
             </div>
           </div>
         </div>
